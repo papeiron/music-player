@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="main-div">
+      <div class="music-player">
+        <div class="music-header">
+          <div class="music-nav">
+            <i
+              id="music-list-menu"
+              class="fa-solid fa-bars music-list-menu"
+            ></i>
+            <ul id="music-list" class="music-list hide"></ul>
+
+            <i id="nav-menu" class="fa-solid fa-music"></i>
+          </div>
+        </div>
+        <div id="music-body" class="music-body">
+          <audio id="music-file" src=""></audio>
+        </div>
+        <div class="music-footer">
+          <div class="time-line">
+            <input id="progress-bar" type="range" />
+            <div class="progress-bar-times">
+              <span id="elapsed-time">0:00</span>
+              <span id="track-length"></span>
+            </div>
+          </div>
+          <div class="music-controls">
+            <button class="btn backward-button" id="backward-button">
+              <i class="fa-solid fa-backward"></i>
+            </button>
+            <button class="btn play-button" id="play-button">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <button class="btn forward-button" id="forward-button">
+              <i class="fa-solid fa-forward"></i>
+            </button>
+          </div>
+          <div class="volume-controls">
+            <input id="volume-controller" type="range" />
+            <span id="volume-mute" class="material-symbols-outlined"
+              >volume_up</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="musicplayer.js"></script>
+    <script src="music.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
